@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <span class="navbar-title">Navigace</span>
+        </div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="pos.html"><i class="fas fa-cash-register"></i> POS</a></li>
+            <li><a href="sklad.html"><i class="fas fa-warehouse"></i> Sklad</a></li>
+            <li><a href="statistiky.html"><i class="fas fa-chart-pie"></i> Statistiky</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            if (navbarLinks.style.display === 'flex') {
+                navbarLinks.style.display = 'none';
+            } else {
+                navbarLinks.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
